@@ -208,6 +208,7 @@ if __name__ == "__main__":
                 print("The answer must be {}.".format(next(iter(candidate_answers))))
             else:
                 print("Computing optimal guesses.")
+
                 start_time = time.perf_counter()
                 suggestions = best_guess(5, candidate_answers=candidate_answers)
                 elapsed = time.perf_counter() - start_time
@@ -215,4 +216,9 @@ if __name__ == "__main__":
 
                 print("Best guesses (lower number = more informative on average):")
                 suggestion_scores = [evaluate_guess(x, candidate_answers) for x in suggestions]
-                print(["{} ({})".format(suggestions[i], suggestion_scores[i]) for i in range(len(suggestions))])
+
+                if suggestion_scores[0] == numCandidates:
+                    print("The answer is one of these:")
+                    print(list(candidate_answers)[:5])
+                else:
+                    print(["{} ({})".format(suggestions[i], suggestion_scores[i]) for i in range(len(suggestions))])
