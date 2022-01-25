@@ -10,4 +10,4 @@ Command line interface. Written in Python, requires [colorama](https://pypi.org/
 
 # video demo (youtube)
 
-[![Watch the video](https://img.youtube.com/vi/P4zdPuOtsWo/hqdefault.jpg)](https://www.youtube.com/watch?v=P4zdPuOtsWo)
+[![Watch the video](https://img.youtube.com/vi/b9AtXzGxjS4/hqdefault.jpg)](https://youtu.be/b9AtXzGxjS4)
